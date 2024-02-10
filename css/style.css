@@ -10,21 +10,20 @@ body{
 	visibility: hidden;
 } */
 
-.skip {
-  position: absolute;
-  left: -9999px;
-  z-index: 999;
-  padding: 1em;
-	background-color: white;
-	border: solid black 2px;
-  opacity: 0;
-}
+#skip a {
+	display: block;
+	position: absolute;
+	left: -999px;
+	top: -999px;
+	}
 
-.skip:focus {
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 1;
-}
+#skip a:focus {
+	left: 0;
+	top: 0;
+	padding: 3px;
+	background: #ffc;
+	border:1px solid #990000;
+	}
 
 
 .container {
@@ -51,7 +50,7 @@ h1{
 .active{
 	background: rgb(210, 235, 236);
 	/* border-width: 5px; */
-	border: solid 5px;
+	border: solid .08em;
 	color: black;
 	text-transform: uppercase;
 }
@@ -106,12 +105,12 @@ nav ul li{
 	background-color: rgb(253, 253, 253);
 	text-align: center;
 	padding:10px;
-	width:25%;
-	border:2px dotted black;
+	border:.1em dotted black;
 	border-radius: 5px;
 	display: inline-block;
-	width: 10%;
-	margin-right: 5%;
+	width: 5em;
+	margin-right: 3vw;
+	font-size: 1em;
 }
 
 /*Added this so the links stay the same color*/
@@ -123,13 +122,13 @@ footer p, .note {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 15px 0;
+  padding: 2vh;
 
   text-align: center;
 }
 
 .note {
-	border-radius: 3px;
+	border-radius: 1em;
 	margin-left: 25%;
 	margin-right: 25%;
 	border: solid gray 1px;
